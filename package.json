@@ -1,5 +1,5 @@
 {
-  "name": "reactDropdownComponent",
+  "name": "reactTabBarComponent",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/krishnasannidhi/react-dropdown.git"
+    "url": "git+https://github.com/krishnasannidhi/react-tab-bar.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/krishnasannidhi/react-dropdown/issues"
+    "url": "https://github.com/krishnasannidhi/react-tab-bar/issues"
   },
-  "homepage": "https://github.com/krishnasannidhi/react-dropdown#readme",
+  "homepage": "https://github.com/krishnasannidhi/react-tab-bar#readme",
   "dependencies": {
     "d3": "^4.10.0",
     "express": "^4.15.3",

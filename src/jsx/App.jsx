@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import ReactDOM from 'react-dom'
-import ReactDropdown from './ReactDropdown'
+import ReactTabBar from './ReactTabBar'
 
 export default class App extends Component{
   constructor(props){
@@ -16,11 +16,11 @@ export default class App extends Component{
   }
   render(){
     return(
-      <div className="react-drop-down-app">
-        <ReactDropdown tabClicked={this.tabClickedInParent}
+      <div className="react-tab-bar-app">
+        <ReactTabBar tabClicked={this.tabClickedInParent}
           datum={this.tabData} isDisplayVertical="true"
           label={this.labelFunction}
-          ></ReactDropdown>
+          ></ReactTabBar>
       </div>
     )
   }
