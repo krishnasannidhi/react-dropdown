@@ -19,7 +19,7 @@ export default class ReactTabBar extends Component{
                       id={'liChildItem_'+item.id}
                       className={'childItem '+this.liDynamicClass}>
 
-                      <span>{item.label}</span>
+                      <div>{this.labelFn.bind(this,item)()}</div>
                   </li>
           }):'Data not provided'}
           </ol>
@@ -27,7 +27,14 @@ export default class ReactTabBar extends Component{
     )
   }
   tabClicked(data,e){
-    //console.info('tabClicked child item & e',data,e)
     this.props.tabClicked(data)
+  }
+  labelFn(item){
+    if(this.props.label){
+      return this.props.label(item)
+    }
+    else{
+      return item.label
+    }
   }
 }
